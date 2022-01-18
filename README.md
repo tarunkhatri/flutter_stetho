@@ -16,9 +16,11 @@ How can you too get this plugin up and running in your own app? Follow these ste
 
 Add `flutter_stetho` to your dependencies in the `pubspec.yaml` file
 
-  - For Flutter 1.7.x, use version `0.3.x`
-  - For Flutter 1.8.x, use version `0.4.x`
-  - For Flutter 1.9.x, use version `0.5.x`
+dev_dependencies:
+  flutter_stetho:
+    git:
+      url: git://github.com/tarunkhatri/flutter_stetho.git
+      ref: master
 
 ### Install StethoHttpOverrides
 
@@ -27,6 +29,8 @@ Next, you'll need to install the `Stetho.initialize()` in the main() function of
 Note: It's probably a good idea only put this override in [a `main_dev.dart` file](https://flutter.rocks/2018/03/02/separating-build-environments-part-one/). 
 
 ```dart
+import 'package:flutter_stetho/flutter_stetho.dart';
+
 void main() {
   Stetho.initialize();
 
