@@ -1,12 +1,6 @@
 # flutter_stetho
 
-A plugin that connects Flutter to the Chrome Dev Tools on Android devices via the [Stetho Android Library](http://facebook.github.io/stetho/).
-
-## Network Inspector
-
-The main feature I was aiming to achieve was a Network Inspector. 
-
-<img src="https://github.com/brianegan/flutter_stetho/raw/master/assets/network_inspector.gif" alt="Network Inspector in Action">
+Flutter stetho by Tarun Khatri (Null Safe support added)
 
 ## Getting Started
 
@@ -44,17 +38,9 @@ void main() {
 
 `flutter run`
 
-### Open Chrome
+### Open Brave
 
-Pop open Chrome or Chromium, navigate to `chrome://inspect`
+Pop open Chrome or Chromium, navigate to `brave://inspect`
 
 You should now see your App appear in the window.
 
-## Known Issues
-
-  * Timing may be slightly off for some requests. That's because:
-  * Code is rough mvp / prototype code. Needs improvement.
-  * Animated Gifs not working
-  * Some error cases may not be properly handled. Need more testing / feedback to find problems.
-  * No Tests
-  * If the app shuts down on start up run `flutter clean` to remove old builds.
