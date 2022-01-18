@@ -40,7 +40,7 @@ void main() {
 
 ### Open Brave
 
-Pop open Chrome or Chromium, navigate to `brave://inspect`
+Pop open Brave browser, navigate to `brave://inspect`
 
 You should now see your App appear in the window.
 
