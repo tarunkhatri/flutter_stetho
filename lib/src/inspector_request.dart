@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 class FlutterStethoInspectorRequest {
   final int? friendlyNameExtra;
   final String url;

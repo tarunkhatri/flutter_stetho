@@ -170,4 +170,13 @@ class StethoHttpClient implements HttpClient {
 
     return new StethoHttpClientRequest(request, id);
   }
+
+  @override
+  set connectionFactory(Future<ConnectionTask<Socket>> Function(Uri url, String? proxyHost, int? proxyPort)? f) {
+
+  }
+
+  @override
+  set keyLog(Function(String line)? callback) {
+  }
 }

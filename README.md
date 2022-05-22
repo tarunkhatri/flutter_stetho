@@ -18,6 +18,16 @@ dev_dependencies:
       ref: master
 ```
 
+for flutter 3.0.0 version use-
+
+```dart
+dev_dependencies:
+  flutter_stetho:
+    git:
+      url: git://github.com/tarunkhatri/flutter_stetho.git
+      ref: flutter_3_0_0
+```
+
 ### Install StethoHttpOverrides
 
 Next, you'll need to install the `Stetho.initialize()` in the main() function of your app. This will enable Stetho and allow `flutter_stetho` to wrap all http calls and report information to the Chrome Dev Tools via the Stetho package from Facebook.
